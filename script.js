@@ -54,15 +54,16 @@ function generatePassword() {
   }
 
   // have to create all possiblities of choices from above with if/else statements
+  // finally realized I could combine arrays under one concat
   
   if (upperChar && lowerChar && numChar && specChar) {
-      var endPassword = charOptions.endPassword.concat(charOptions.upper).concat(charOptions.lower).concat(charOptions.num).concat(charOptions.spec);
+      var endPassword = charOptions.endPassword.concat(charOptions.upper, charOptions.lower, charOptions.num, charOptions.spec);
     }
     else if (!(upperChar) && lowerChar && numChar && specChar) {
-      var endPassword = charOptions.endPassword.concat(charOptions.lower).concat(charOptions.num).concat(charOptions.spec);
+      var endPassword = charOptions.endPassword.concat(charOptions.lower, charOptions.num, charOptions.spec);
     } 
     else if (!(upperChar) && !(lowerChar) && numChar && specChar) {
-      var endPassword = charOptions.endPassword.concat(charOptions.num).concat(charOptions.spec);
+      var endPassword = charOptions.endPassword.concat(charOptions.num, charOptions.spec);
     }
     else if (!(upperChar) && !(lowerChar) && !(numChar) && specChar) {
       var endPassword = charOptions.endPassword.concat(charOptions.spec);
@@ -71,28 +72,29 @@ function generatePassword() {
       var endPassword = charOptions.endPassword.concat(charOptions.upper);
     }
     else if (upperChar && lowerChar && !(numChar) && !(specChar)) {
-      var endPassword = charOptions.endPassword.concat(charOptions.upper).concat(charOptions.lower);
+      var endPassword = charOptions.endPassword.concat(charOptions.upper, charOptions.lower);
     }
     else if (upperChar && lowerChar && numChar && !(specChar)) {
-      var endPassword = charOptions.endPassword.concat(charOptions.upper).concat(charOptions.lower).concat(charOptions.num);
+      var endPassword = charOptions.endPassword.concat(charOptions.upper, charOptions.lower, charOptions.num);
     } 
     else if (!(upperChar) && lowerChar && !(numChar) && !(specChar)) {
       var endPassword = charOptions.endPassword.concat(charOptions.lower);
     }
     else if (!(upperChar) && lowerChar && numChar && !(specChar)) {
-      var endPassword = charOptions.endPassword.concat(charOptions.lower).concat(charOptions.num);
+      var endPassword = charOptions.endPassword.concat(charOptions.lower, charOptions.num);
     }
     else if (!(upperChar) && !(lowerChar) && numChar && !(specChar)) {
       var endPassword = charOptions.endPassword.concat(charOptions.num);
     }
     else if (upperChar && !(lowerChar) && !(numChar) && specChar) {
-      var endPassword = charOptions.endPassword.concat(charOptions.upper).concat(charOptions.spec);
+      var endPassword = charOptions.endPassword.concat(charOptions.upper, charOptions.spec);
     }
     else if (upperChar && !(lowerChar) && numChar && !(specChar)) {
-      var endPassword = charOptions.endPassword.concat(charOptions.upper).concat(charOptions.num);
+      var endPassword = charOptions.endPassword.concat(charOptions.upper, charOptions.num);
     } 
     else if (!(upperChar && lowerChar && numChar && specChar)) {
       alert("Please chose at least one unique identifier option!");
+      // realized return generatePassword keeps from showing additonal alerts
       return generatePassword();
     } 
    
