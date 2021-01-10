@@ -24,7 +24,7 @@
 <img src=https://github.com/mtjones1979/Password-Generator/blob/main/Assets/03-javascript-homework-demo.png?raw=true/>
 <br>
 <h2>Link</h2>
-<a href={https.//github}></a>
+<a href="https://mtjones1979.github.io/Password-Generator">Click</a>
 <h2>Resources</h2>
 <li>Google</li>
 <li>W3Schools</li>
