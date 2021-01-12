@@ -28,6 +28,6 @@
 <h2>Resources</h2>
 <li>Google</li>
 <li>W3Schools</li>
-<li>Instructor/TA's answering questions via Slack from students</li>
+<li>Instructor/TA and students through slack and office hours</li>
 
 

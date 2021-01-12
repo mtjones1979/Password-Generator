@@ -14,7 +14,7 @@ function generatePassword() {
     "lower": ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"],
     "endPassword": []  
   };
-  
+  // It took me a while to realize I was having issues with concat because the arrays were not in the function/scope
   let finalPassword = "";
   
   // ask how many characters and set up else statemens if other than number between 8 and 128 is chosen
