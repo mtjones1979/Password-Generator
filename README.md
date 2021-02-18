@@ -20,8 +20,10 @@
 <li>WHEN the password is generated</li>
 <li>THEN the password is either displayed in an alert or written to the page</li>
 <br>
-<h2>Mock Up Example</h2>
-<img src=https://github.com/mtjones1979/Password-Generator/blob/main/Assets/03-javascript-homework-demo.png?raw=true/>
+<h2>Screenshot</h2>
+<img src="https://user-images.githubusercontent.com/74076318/108433225-3daeba80-720b-11eb-8299-0e68a02cdbe2.png">
+<img src="https://user-images.githubusercontent.com/74076318/108433360-80709280-720b-11eb-8d82-6188e2ed4461.png">
+<img src="https://user-images.githubusercontent.com/74076318/108433489-b281f480-720b-11eb-92d4-0f59cd958ef3.png">
 <br>
 <h2>Link</h2>
 <a href="https://mtjones1979.github.io/Password-Generator">Click</a>
